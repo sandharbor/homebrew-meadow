@@ -22,6 +22,18 @@ metadata; it does not contain the application archive.
 brew upgrade --cask meadow-cli
 ```
 
+## Prerelease testing
+
+Release candidates are published on a separate opt-in channel. They do not
+change the stable `meadow-cli` Cask:
+
+```sh
+brew install --cask sandharbor/meadow/meadow-cli@prerelease
+```
+
+The prerelease Cask always points to one immutable, notarized candidate. It is
+removed when that exact candidate is promoted to the stable channel.
+
 ## Uninstall
 
 ```sh
